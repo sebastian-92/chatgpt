@@ -96,7 +96,7 @@ input[type="button"]:hover {
 </head>
 
 <body>
-    <h1 style="display: inline-block;">Chatgpt - brought to you by thepegleg</h1>
+    <h1 style="display: inline-block;">AI (Llama3) - brought to you by thepegleg</h1>
     &nbsp; <input type="text" id="apiKey" value="" style="width: 390px;" placeholder="Type your openai apikey here...">
     <div id="chatbox"></div>
     <textarea id="userInput" type="text" placeholder="Type your message here..."></textarea>
@@ -149,10 +149,10 @@ input[type="button"]:hover {
 
             function fetchMessages() {
                 try {
-                    const apiKey = 'fresed-ej02iJvIunjA7LpdQiOBNhOQFlMroV'
+                    const apiKey = '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'
 
                     var settings = {
-                        "url": "https://fresedgpt.space/v1/chat/completions",
+                        "url": "https://api.groq.com/openai/v1/chat/completions",
                         "method": "POST",
                         "timeout": 0,
                         "headers": {
@@ -160,7 +160,7 @@ input[type="button"]:hover {
                             "Content-Type": "application/json"
                         },
                         "data": JSON.stringify({
-                            "model": "gpt-3.5-turbo-16k",
+                            "model": "llama3-70b-8192",
                             "messages": messages
                         }),
                     };
